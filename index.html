@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video Letter to My Future Self</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="progress" aria-hidden="true"></div>
+
+<nav class="nav" aria-label="Sections">
+  <div class="nav-in">
+    <ul>
+      <li><a href="#record">How to record</a></li>
+      <li><a href="#mindsets">Mindsets</a></li>
+      <li><a href="#seminar">In the seminar</a></li>
+      <li><a href="#questions">Three questions</a></li>
+      <li><a href="#delivery">Delivery</a></li>
+    </ul>
+    <div class="nav-tools">
+      <span class="ready-count" id="readyCount" title="Questions you marked as ready to record">0 of 3 ready</span>
+      <button type="button" class="theme" id="themeBtn" aria-label="Switch between light and dark theme">Theme</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">Growth Mindset and Salsa Dancing · Skill Seminar</p>
+      <h1>A Video Letter to My Future Self</h1>
+      <p class="lead">Record one short video in which today's you gives advice to your future self at three hard moments of professional life.</p>
+      <ul class="facts">
+        <li><strong>3</strong>questions</li>
+        <li><strong>~1 min</strong>per question</li>
+        <li><strong>~3 min</strong>in total</li>
+      </ul>
+      <a class="cta" href="#questions">Go to the questions</a>
+    </div>
+    <div class="wave" id="wave" aria-hidden="true"></div>
+  </div>
+</header>
+
+<main>
+<section id="record">
+  <div class="wrap">
+    <h2>How to record</h2>
+    <ol class="steps">
+      <li>One video, about 1 minute per question (3 minutes in total).</li>
+      <li>Speak directly to your future self ("when this happens, remember that..."). Use notes, not a script.</li>
+      <li>A phone is enough. Find a quiet place, with your face visible.</li>
+      <li>Keep the video somewhere you can find it. It is meant to be opened when the moment comes.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="mindsets">
+  <div class="wrap">
+    <h2>Fixed vs. growth mindset in a nutshell</h2>
+    <p class="sub">A fixed mindset treats ability as a given. A growth mindset treats it as something you develop through effort, good strategies and feedback (Dweck). Hover or tap a line to see its counterpart.</p>
+    <div class="compare">
+      <div class="col fixed">
+        <h3>Fixed mindset</h3>
+        <dl>
+          <div class="row" data-k="ability" tabindex="0"><dt>Ability</dt><dd>"You either have it or you don't."</dd></div>
+          <div class="row" data-k="challenges" tabindex="0"><dt>Challenges</dt><dd>Avoided: they might expose limits.</dd></div>
+          <div class="row" data-k="effort" tabindex="0"><dt>Effort</dt><dd>Proof that I'm not talented.</dd></div>
+          <div class="row" data-k="mistakes" tabindex="0"><dt>Mistakes</dt><dd>Proof that I'm not good enough.</dd></div>
+          <div class="row" data-k="feedback" tabindex="0"><dt>Feedback</dt><dd>A threat to defend against.</dd></div>
+          <div class="row" data-k="others" tabindex="0"><dt>Others' success</dt><dd>A threat; I compare myself.</dd></div>
+        </dl>
+      </div>
+      <div class="col growth">
+        <h3>Growth mindset</h3>
+        <dl>
+          <div class="row" data-k="ability" tabindex="0"><dt>Ability</dt><dd>"I can develop it."</dd></div>
+          <div class="row" data-k="challenges" tabindex="0"><dt>Challenges</dt><dd>Sought: they are how I grow.</dd></div>
+          <div class="row" data-k="effort" tabindex="0"><dt>Effort</dt><dd>The path to mastery.</dd></div>
+          <div class="row" data-k="mistakes" tabindex="0"><dt>Mistakes</dt><dd>Information about what to adjust.</dd></div>
+          <div class="row" data-k="feedback" tabindex="0"><dt>Feedback</dt><dd>A tool to improve.</dd></div>
+          <div class="row" data-k="others" tabindex="0"><dt>Others' success</dt><dd>A source of ideas and inspiration.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="seminar">
+  <div class="wrap">
+    <h2>How you experienced it in the seminar</h2>
+    <p class="sub">The seminar used salsa as a mirror: it puts you in situations of exposure, error and feedback, where each mindset shows up in the body before you can talk about it. The table follows the first three core sessions of the syllabus. These are the moments to draw on when you answer the three questions below.</p>
+    <div class="toolbar">
+      <button type="button" class="ghost" id="reframeBtn" aria-pressed="false">Reframe the voices</button>
+    </div>
+    <div class="tablewrap" tabindex="0" role="region" aria-label="Sessions and mindset voices">
+      <table id="sessions">
+        <thead>
+          <tr><th>Session</th><th>Situation in the dance</th><th>Fixed-mindset voice</th><th>Growth-mindset response</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1. Self-awareness and attention</td>
+            <td>Learning new steps next to others; noticing where your attention goes.</td>
+            <td class="fixed"><span>"Everyone is better than me."</span></td>
+            <td class="growth">"I'll stop comparing. What does my own progress look like?"</td>
+          </tr>
+          <tr>
+            <td>2. Self-motivation and effort</td>
+            <td>Repeating a step that doesn't work yet; pushing a limit you assumed was fixed.</td>
+            <td class="fixed"><span>"I'm just not a dancer."</span></td>
+            <td class="growth">"Not yet. Effort and a different strategy can change this."</td>
+          </tr>
+          <tr>
+            <td>3. Discomfort and feedback</td>
+            <td>Making mistakes in front of a partner; giving and receiving peer feedback.</td>
+            <td class="fixed"><span>"They saw me fail."</span></td>
+            <td class="growth">"This feedback tells me what to adjust next."</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="questions">
+  <div class="wrap">
+    <h2>The three questions</h2>
+    <p class="sub">Prepare each answer first, then record. Jot notes, practice with the 60-second timer, and mark the question as ready. Notes stay in this browser only.</p>
+
+    <article class="q" id="q1" data-q="q1">
+      <div class="num">Question 1</div>
+      <h3>When I'm rejected from my dream job</h3>
+      <p class="record"><small>Question to record</small>If I get rejected from the dream job I was applying for, the one I was so excited about, what advice do I give myself so that I don't read it as a verdict on my worth?</p>
+      <p>Being rejected from a dream job you were really excited about hurts. A fixed mindset turns it into a sentence about who you are. A growth mindset reads it as information about where you are today and what you can develop.</p>
+      <h4>Ideas for your advice (use the ones that feel true to you)</h4>
+      <ul>
+        <li>What will my harshest inner voice say in that moment, and how do I answer it?</li>
+        <li>What might have been missing that I can develop, and what is my first step?</li>
+        <li>Who can give me honest feedback about the process?</li>
+        <li>What is still true about me, even if I wasn't chosen?</li>
+      </ul>
+      <h4>Idea behind it</h4>
+      <p>The difference between "I'm not good enough" and "not yet."</p>
+      <p class="open"><span>Optional opening line:</span> <q class="line">Hi, future me. If you're watching this, you were rejected from the dream job you were so hopeful about. Before you draw conclusions about yourself, remember that...</q></p>
+      <div class="tools"></div>
+    </article>
+
+    <article class="q" id="q2" data-q="q2">
+      <div class="num">Question 2</div>
+      <h3>When I make my first big mistake at work</h3>
+      <p class="record"><small>Question to record</small>The day I make my first important mistake at work, what advice do I give myself to respond with responsibility and without sinking into shame?</p>
+      <p>The first serious mistake almost always comes. A fixed mindset takes it as proof that you aren't capable and pushes you to hide it or defend yourself. A growth mindset takes it as part of learning without making it any less serious: you own your part and extract what to learn.</p>
+      <h4>Ideas for your advice (use the ones that feel true to you)</h4>
+      <ul>
+        <li>What will my first impulse probably be (hide it, justify it, blame someone), and what will I do instead?</li>
+        <li>Who do I tell first, and how: with facts and a proposed solution?</li>
+        <li>What is the difference between "I made a mistake" and "I am a mistake"?</li>
+        <li>What will I change so it doesn't happen again?</li>
+      </ul>
+      <h4>Idea behind it</h4>
+      <p>A mistake is data and deliberate practice, and guilt ("I did something wrong") is not shame ("I am something wrong"), a distinction from Brené Brown. In the seminar, dancing put you in exactly this spot: getting it wrong in front of others and continuing to dance.</p>
+      <p class="open"><span>Optional opening line:</span> <q class="line">Future me, if you're here, you got something important wrong. Breathe. The first thing I want you to remember is...</q></p>
+      <div class="tools"></div>
+    </article>
+
+    <article class="q" id="q3" data-q="q3">
+      <div class="num">Question 3</div>
+      <h3>When I feel unmotivated</h3>
+      <p class="record"><small>Question to record</small>When I've lost my drive and everything costs twice as much, what advice do I give myself to start moving again, even with one small step?</p>
+      <p>Demotivation doesn't warn you, and it doesn't mean you chose wrong. A growth mindset doesn't ask you to fake enthusiasm: it invites you to reconnect with effort, with the purpose behind what you do, and with small progress you can actually see.</p>
+      <h4>Ideas for your advice (use the ones that feel true to you)</h4>
+      <ul>
+        <li>How do I recognize I'm at that point, and what signs come before it?</li>
+        <li>What did I achieve in the past that seemed impossible at the start?</li>
+        <li>What is the smallest step I can take today?</li>
+        <li>What am I doing this for? Which of my values is at stake?</li>
+        <li>Who can I call?</li>
+      </ul>
+      <h4>Idea behind it</h4>
+      <p>Effort and strategy as the road to progress, the value of recognizing progress (not only results), and Susan David's emotional agility: feeling what you feel without letting it decide for you.</p>
+      <p class="open"><span>Optional opening line:</span> <q class="line">Hi, future me. If you're watching this, you have no energy for anything today. That's okay. Before you decide what to do about it, look at...</q></p>
+      <div class="tools"></div>
+    </article>
+  </div>
+</section>
+
+<section id="delivery">
+  <div class="wrap">
+    <h2>Wrapping up and delivery</h2>
+    <p class="sub">End the video with one sentence your future self can easily remember.</p>
+    <div class="tablewrap" tabindex="0" role="region" aria-label="Suggested delivery criteria">
+      <table class="narrow">
+        <thead><tr><th>Criterion</th><th>What is expected</th></tr></thead>
+        <tbody>
+          <tr><td>Covers all three situations</td><td>An answer of your own for each question, about 1 minute each</td></tr>
+          <tr><td>Connects to growth mindset</td><td>Names the fixed-mindset voice and answers it with a concrete strategy, not a generic phrase</td></tr>
+          <tr><td>Draws on the seminar</td><td>At least one reference to something you lived or discovered in the sessions</td></tr>
+          <tr><td>Genuine</td><td>In your own words, not read from a script</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3 class="refs-h">Reference list</h3>
+    <ul class="refs">
+      <li>Dweck, C. (2006). <em>Mindset: The New Psychology of Success.</em> Random House.</li>
+      <li>Eurich, T. (2017). <em>Insight.</em> Crown Business.</li>
+      <li>Brown, B. (2012). <em>Daring Greatly.</em> Gotham Books.</li>
+      <li>David, S. (2016). <em>Emotional Agility.</em> Avery.</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Growth Mindset and Salsa Dancing · Skill Seminar</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
