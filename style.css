@@ -169,6 +169,10 @@ table.reframed td.growth { background: var(--growth-bg); }
 .open span { font-weight: 600; }
 .open q { font-style: italic; quotes: "\201C" "\201D"; }
 
+.deadline { margin-top: 24px; background: var(--card); border: 1px solid var(--line); border-left: 6px solid var(--accent); border-radius: 10px; padding: 18px 22px; }
+.deadline strong { display: block; font-family: var(--display); font-size: 22px; }
+.deadline p { margin: 6px 0 0; }
+.deadline a { color: var(--accent); font-weight: 600; overflow-wrap: anywhere; }
 .refs-h { margin: 36px 0 10px; font-size: 22px; }
 ul.refs { padding-left: 20px; }
 ul.refs li { margin-bottom: 6px; }
