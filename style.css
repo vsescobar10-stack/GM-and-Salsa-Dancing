@@ -74,8 +74,6 @@ a { color: inherit; }
 .nav a:hover { color: var(--accent); }
 .nav a[aria-current="true"] { color: var(--ink); border-bottom-color: var(--accent); }
 .nav-tools { display: flex; align-items: center; gap: 12px; padding: 6px 0; }
-.ready-count { font-size: 14px; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
-.ready-count.done { color: var(--growth); }
 .theme {
   font: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
   background: transparent; color: var(--ink);
@@ -159,7 +157,6 @@ table.reframed td.growth { background: var(--growth-bg); }
 
 /* Question cards */
 .q { background: var(--card); border: 1px solid var(--line); border-left-width: 6px; border-radius: 12px; padding: clamp(20px, 4vw, 36px); margin-bottom: 24px; transition: border-color .2s ease; }
-.q.ready { border-color: var(--growth); }
 .q .num { font-family: var(--display); font-weight: 700; color: var(--accent); font-size: 15px; letter-spacing: .04em; text-transform: uppercase; }
 .q h3 { font-size: clamp(24px, 3.5vw, 32px); margin: 6px 0 16px; }
 .record { border-left: 4px solid var(--accent); padding: 4px 0 4px 18px; margin: 0 0 18px; font-size: 20px; font-style: italic; }
@@ -172,33 +169,6 @@ table.reframed td.growth { background: var(--growth-bg); }
 .open span { font-weight: 600; }
 .open q { font-style: italic; quotes: "\201C" "\201D"; }
 
-.tools { margin-top: 22px; padding-top: 20px; border-top: 1px dashed var(--line); display: grid; grid-template-columns: 1fr auto; gap: 18px 28px; align-items: start; }
-.notes label { display: block; font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
-.notes textarea {
-  width: 100%; min-height: 110px; resize: vertical; font: inherit; font-size: 16px; line-height: 1.5;
-  color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px;
-}
-.notes textarea:focus-visible { outline-offset: 0; }
-.btn-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; align-items: center; }
-.btn-row .msg { font-size: 14px; color: var(--growth); font-weight: 600; min-height: 1.2em; }
-.ready-toggle { display: inline-flex; align-items: center; gap: 8px; font-size: 16px; font-weight: 600; cursor: pointer; margin-left: auto; }
-.ready-toggle input { width: 20px; height: 20px; accent-color: var(--growth); }
-
-.timer { display: flex; flex-direction: column; align-items: center; gap: 10px; min-width: 150px; }
-.ring { position: relative; width: 112px; height: 112px; }
-.ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
-.ring circle { fill: none; stroke-width: 7; }
-.ring .bg { stroke: var(--line); }
-.ring .fg { stroke: var(--accent); stroke-linecap: round; stroke-dasharray: 163.4; stroke-dashoffset: 0; transition: stroke-dashoffset 1s linear, stroke .3s ease; }
-.ring.low .fg { stroke: var(--growth); }
-.ring output { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--display); font-weight: 700; font-size: 26px; font-variant-numeric: tabular-nums; }
-.timer button {
-  font: inherit; font-weight: 600; font-size: 15px; cursor: pointer;
-  background: var(--ink); color: var(--paper); border: 0; border-radius: 8px; padding: 9px 18px;
-}
-.timer button:hover { background: var(--accent); color: var(--accent-ink); }
-.timer .hint { font-size: 13px; color: var(--muted); text-align: center; }
-
 .refs-h { margin: 36px 0 10px; font-size: 22px; }
 ul.refs { padding-left: 20px; }
 ul.refs li { margin-bottom: 6px; }
@@ -208,10 +178,6 @@ footer { margin-top: 56px; padding: 28px 0 40px; border-top: 1px solid var(--lin
   .hero-grid { grid-template-columns: 1fr; }
   .wave { height: 110px; }
   .compare { grid-template-columns: 1fr; }
-  .tools { grid-template-columns: 1fr; }
-  .timer { flex-direction: row; justify-content: flex-start; gap: 16px; flex-wrap: wrap; }
-  .ring { width: 92px; height: 92px; }
-  .ring output { font-size: 22px; }
   body { font-size: 17px; }
 }
 @media (prefers-reduced-motion: reduce) {
